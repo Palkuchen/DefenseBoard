@@ -7,7 +7,13 @@ import java.io.File;
 import java.io.IOException;
 
 public enum Resource {
-    BLUB("src/main/resources/enemy/Blubb.png", 0.2);
+    BLUB("src/main/resources/enemy/Blubb.png", 0.18),
+    BULLET("src/main/resources/projectiles/Bullet.png", 0.06),
+    BACKGROUND_GRASS("src/main/resources/player/upgrades/Background_Grass.png", 1.4),
+    STRENGTH("src/main/resources/player/upgrades/Strength.png", 0.2),
+    SPEED("src/main/resources/player/upgrades/Speed.png", 0.2),
+    UPGRADE("src/main/resources/player/upgrades/Upgrade.png", 0.2),
+    GOLDEN_BALL("src/main/resources/player/upgrades/GoldenBall.png", 0.16);
 
     private int width = 0;
     Image image;

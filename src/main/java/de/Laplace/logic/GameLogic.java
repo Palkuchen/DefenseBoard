@@ -14,11 +14,11 @@ public class GameLogic {
 
     public void startGame() {
         // Load Character
-        Player player = new Player(engine.getSizeX()/2, engine.getSizeY()/2);
+        Player player = new Player(engine.getSizeX()/2, engine.getSizeY()/2, engine);
         engine.getGameObjects().add(player);
 
         // Spawn Entitys
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 2; i++) {
             Blub blub = new Blub((int) (Math.random()*engine.getSizeX()), (int) (Math.random()*engine.getSizeY()), engine);
             engine.getGameObjects().add(blub);
         }

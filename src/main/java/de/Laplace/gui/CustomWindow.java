@@ -19,5 +19,8 @@ public class CustomWindow extends JFrame {
 
         canvas = new CustomCanvas(engine);
         add(canvas);
+
+        addMouseListener(new MouseEvent(engine));
+        addKeyListener(new KeyboardEvent(engine));
     }
 }
